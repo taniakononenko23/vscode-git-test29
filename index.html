@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -10,34 +11,40 @@
       crossorigin="anonymous"
     />
     <style>
-      div.block {
-        background-color: coral;
-        margin: 8px;
-        height: 100px;
-        width: 100px;
-        flex-shrink: 0;
-        flex-grow: 1;
+      * {
+        display: flexbox;
       }
-      .body {
-        display: flex;
-        flex-wrap: wrap;
+      .block {
+        float: left;
+        height: 300px;
+        width: 20%;
+      }
+      .block_red {
+        background-color: red;
+      }
+
+      .block_green {
+        background-color: green;
+      }
+
+      .block_blue {
+        background-color: blue;
+      }
+
+      .block_yellow {
+        background-color: yellow;
+      }
+
+      .block_black {
+        background-color: black;
       }
     </style>
   </head>
-
   <body>
-    <div class="container">
-      <div class="block">1</div>
-      <div class="block">2</div>
-      <div class="block">3</div>
-      <div class="block">4</div>
-      <div class="block">5</div>
-      <div class="block">6</div>
-      <div class="block">7</div>
-      <div class="block">8</div>
-      <div class="block">9</div>
-      <div class="block">10</div>
-      <div class="block">11</div>
-    </div>
+    <div class="block block_red"></div>
+    <div class="block block_green"></div>
+    <div class="block block_blue"></div>
+    <div class="block block_yellow"></div>
+    <div class="block block_black"></div>
   </body>
 </html>
